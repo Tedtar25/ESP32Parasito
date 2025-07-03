@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESP32Parasito", "ESP32Parasito.csproj", "{585661B6-2408-4112-B5FB-982843C3847D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{585661B6-2408-4112-B5FB-982843C3847D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585661B6-2408-4112-B5FB-982843C3847D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585661B6-2408-4112-B5FB-982843C3847D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{585661B6-2408-4112-B5FB-982843C3847D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585661B6-2408-4112-B5FB-982843C3847D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E68B066-A01F-4E24-BD97-70337773EC9C}
+	EndGlobalSection
+EndGlobal

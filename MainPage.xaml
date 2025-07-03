@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESP32Parasito.MainPage"
+             BackgroundColor="#1C1C1C"
+             Padding="20">
+
+    <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,Auto,*" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" RowSpacing="20" ColumnSpacing="30">
+
+        <!-- FLECHAS ARRIBA/ABAJO (IZQUIERDA) -->
+        <StackLayout Grid.Column="0" VerticalOptions="Center" Spacing="20">
+            <ImageButton x:Name="btnForward" Source="arrow_up.png" WidthRequest="70" HeightRequest="70" BackgroundColor="Transparent" />
+            <ImageButton x:Name="btnBackward" Source="arrow_down.png" WidthRequest="70" HeightRequest="70" BackgroundColor="Transparent" />
+        </StackLayout>
+
+        <!-- BOTÓN DE STOP (CENTRO) -->
+        <StackLayout Grid.Column="1" VerticalOptions="Center">
+            <ImageButton x:Name="btnStop" Source="stop_circle.jpg" WidthRequest="80" HeightRequest="80" BackgroundColor="Transparent" />
+        </StackLayout>
+
+        <!-- FLECHAS IZQUIERDA/DERECHA (DERECHA) -->
+        <StackLayout Grid.Column="2" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+            <ImageButton x:Name="btnLeft" Source="arrow_left.png" WidthRequest="70" HeightRequest="70" BackgroundColor="Transparent" />
+            <ImageButton x:Name="btnRight" Source="arrow_right.png" WidthRequest="70" HeightRequest="70" BackgroundColor="Transparent" />
+        </StackLayout>
+
+        <!-- ESTADO + BOTÓN DE CONEXIÓN -->
+        <StackLayout Grid.Row="2" Grid.ColumnSpan="3" Spacing="10" HorizontalOptions="Center" Margin="0,20,0,0">
+            <Label x:Name="txtEstatus" Text="Estado: Desconectado" TextColor="White" FontSize="14" HorizontalTextAlignment="Center" />
+            <Button x:Name="btnConectar" Text="🔌 Conectar" BackgroundColor="#FFB300" TextColor="Black" FontAttributes="Bold" CornerRadius="10" Padding="10,5" WidthRequest="200" />
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
